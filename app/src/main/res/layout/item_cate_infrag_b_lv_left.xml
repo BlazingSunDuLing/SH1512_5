@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <TextView
+        android:id="@+id/mCateInFragBLvLeftTvBg"
+        android:layout_width="3dp"
+        android:gravity="left"
+        android:layout_height="wrap_content"
+        android:background="@color/colorRed"
+        android:padding="5dp"
+        android:visibility="gone"/>
+    <TextView
+        android:id="@+id/mCateInFragBLvLeftTv"
+        android:text="热门分类"
+        android:gravity="center"
+        android:padding="5dp"
+        android:textColor="@color/colorBlack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorsoLightGray"/>
+</LinearLayout>

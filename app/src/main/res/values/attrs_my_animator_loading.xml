@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="MyAnimatorLoading">
+        <attr name="show_visibility" format="boolean"/>
+        <attr name="initSrc" format="reference"/>
+    </declare-styleable>
+</resources>

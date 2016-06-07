@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/colorRed"
+    android:gravity="center">
+
+
+    <RadioGroup
+        android:id="@+id/CateFragtRg"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:checkedButton="@+id/CateFragtRbA"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/CateFragtRbA"
+            style="@style/CateFragRb"
+            android:background="@drawable/select_cate_frag_rb_a"
+            android:text="攻略" />
+
+        <RadioButton
+            android:id="@+id/CateFragtRbB"
+            style="@style/CateFragRb"
+            android:background="@drawable/select_cate_frag_rb_b"
+            android:text="礼物" />
+    </RadioGroup>
+</RelativeLayout>

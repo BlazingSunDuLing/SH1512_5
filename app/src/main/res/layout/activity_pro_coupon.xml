@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+              android:background="#efeded"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:background="@color/colorRed"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <ImageView
+            android:id="@+id/coupon_imageview"
+            android:clickable="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@mipmap/ic_action_back"
+            android:layout_width="25dp  "
+            android:layout_height="25dp"/>
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我的礼券"
+            android:textStyle="bold"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp"/>
+        <Button
+            android:background="@color/colorRed"
+            android:id="@+id/coupon_btn"
+            android:layout_centerVertical="true"
+            android:text="礼券码"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:textSize="16sp"
+            android:textColor="@color/colorWhite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+    <TextView
+       android:layout_centerHorizontal="true"
+       android:layout_centerVertical="true"
+        android:textColor="@color/colorGray"
+        android:text="你还没有可以使用的礼券哦~"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>

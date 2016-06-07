@@ -1,0 +1,13 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="cate_frag_rb_radius">5dp</dimen>
+    <dimen name="cate_frag_rb_stroke_width">1dp</dimen>
+    <dimen name="value0">-200dp</dimen>
+    <dimen name="value85">85.3dp</dimen>
+    //指南页recycleView列表项的间距
+    <dimen name="recycler_item_panding">8dp</dimen>
+    <!--<dimen name="alpha0">0.0</dimen>-->
+    <!--<dimen name="alpha1">1.0</dimen>-->
+</resources>

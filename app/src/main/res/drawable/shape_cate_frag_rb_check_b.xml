@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+    android:shape="rectangle"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners
+        android:bottomRightRadius="@dimen/cate_frag_rb_radius"
+        android:topRightRadius="@dimen/cate_frag_rb_radius"/>
+    <stroke android:color="@color/colorWhite" android:width="@dimen/cate_frag_rb_stroke_width"/>
+    <solid android:color="@color/colorWhite"/>
+</shape>

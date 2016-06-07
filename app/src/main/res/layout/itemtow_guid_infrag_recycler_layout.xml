@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/colorWhite"
+              android:orientation="vertical"
+
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            style="@style/GuidRecyclerItemTwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/bg_datepicker"
+                />
+
+            <TextView
+                android:id="@+id/GuidItemTwoTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:text="2016/5/10"
+                android:textColor="@color/colorGrayBlack"
+                />
+
+            <TextView
+                android:id="@+id/GuidItemTwoWeek"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="1.5dp"
+                android:text="周四"
+                android:textColor="@color/colorGrayBlack"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/GuidItemTwoUpdateTime"
+            style="@style/GuidRecyclerItemTwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/time_article"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingLeft="1.5dp"
+                android:text="下次刷新"
+                android:textColor="@color/colorOrange"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/GuidItemTwoNextUpdateTimeTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="1dp"
+                android:text="12:00"
+                android:textColor="@color/colorOrange"
+                android:textSize="12sp"/>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

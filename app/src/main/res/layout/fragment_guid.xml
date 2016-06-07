@@ -1,0 +1,109 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                tools:context="com.example.administrator.sh1512_5.Fragment.GuidFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/GuidFragViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/GuidFragTab"></android.support.v4.view.ViewPager>
+
+    <com.example.administrator.sh1512_5.MyView.MyGridView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/GuidFragGridView"
+        android:background="@color/colorAlphaWhite"
+        android:numColumns="4"
+        android:alpha="0"
+        android:focusable="false"
+        android:clickable="false"
+
+        />
+
+    <RelativeLayout
+        android:id="@+id/GuidFragToo"
+        android:paddingTop="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorRed"
+        android:gravity="center_vertical"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:src="@mipmap/btn_signin"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:paddingBottom="3dp"
+            android:src="@mipmap/logo_title"/>
+
+        <ImageView
+            android:id="@+id/GuidSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingBottom="3dp"
+            android:paddingRight="10dp"
+            android:src="@mipmap/ic_menu_search"
+            android:clickable="true"/>
+    </RelativeLayout>
+    <!--</android.support.v7.widget.Toolbar>-->
+
+    <RelativeLayout
+        android:id="@+id/GuidFragTab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/GuidFragToo"
+        android:gravity="center_vertical"
+        >
+
+        <TextView
+            android:id="@+id/GuidFragText"
+            android:layout_width="300dp"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="切换频道"
+            android:textColor="@color/colorGray"
+            />
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/GuidFragTabLayout"
+            android:layout_width="300dp"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:background="@color/colorWhite"/>
+
+        <LinearLayout
+            android:id="@+id/GuidFragLinear"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:background="@color/colorWhite"
+            >
+            <ImageView
+                android:id="@+id/GuidFragImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/arrow_index_down"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

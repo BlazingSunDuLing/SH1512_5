@@ -1,0 +1,68 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/CateInFragCard"
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp">
+
+                <TextView
+                    android:id="@+id/CateInFragTvProject"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="专题"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/CateInFragTvAll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="查看全部"
+                    android:textSize="10sp" />
+            </RelativeLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/CateInFragRecy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/CateInFragCardLv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+        <!--滑动冲突 ListView的高度暂时是固定值即伪功能-->
+        <ListView
+            android:id="@+id/CateInFragLv"
+            android:layout_width="match_parent"
+            android:layout_height="1200dp"
+            android:dividerHeight="5dp"
+            android:scrollbarStyle="outsideOverlay"
+            android:listSelector="@color/colorWhite"/>
+        <!--android:scrollbarStyle="outsideOverlay" android:fastScrollEnabled="true"-->
+    </android.support.v7.widget.CardView>
+</LinearLayout>
+</ScrollView>

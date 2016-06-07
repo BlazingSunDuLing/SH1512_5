@@ -1,0 +1,146 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:context="com.example.administrator.sh1512_5.Fragment.ProfileFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:background="@mipmap/bg_profile">
+
+        <ImageView
+            android:id="@+id/pro_image_message"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@mipmap/icon_message"
+            android:longClickable="true"/>
+
+        <ImageView
+            android:id="@+id/pro_image_settings"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/pro_image_message"
+            android:layout_marginRight="10dp"
+            android:background="@mipmap/me_settings"
+            android:longClickable="true"/>
+
+        <ImageView
+            android:id="@+id/pro_image_scan"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/pro_image_message"
+            android:layout_marginRight="40dp"
+            android:background="@mipmap/icon_scan"
+            android:longClickable="true"/>
+
+        <ImageView
+            android:id="@+id/pro_image_me"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@mipmap/me_avatar_boy"
+            android:longClickable="true"/>
+
+        <TextView
+            android:id="@+id/pro_textview_me"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pro_image_me"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="未登录"
+            android:textColor="@color/colorWhite"/>
+    </RelativeLayout>
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/pro_cart"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorWhite"
+            android:clickable="true"
+            android:drawableTop="@mipmap/icon_cart"
+            android:gravity="center_horizontal"
+            android:text="购物车"/>
+
+        <TextView
+            android:id="@+id/pro_order"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorWhite"
+            android:clickable="true"
+            android:drawableTop="@mipmap/icon_order"
+            android:gravity="center_horizontal"
+            android:text="订单"/>
+
+        <TextView
+            android:id="@+id/pro_coupon"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorWhite"
+            android:clickable="true"
+            android:drawableTop="@mipmap/icon_coupon"
+            android:gravity="center_horizontal"
+            android:text="礼券"/>
+
+        <TextView
+            android:id="@+id/pro_service"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorWhite"
+            android:clickable="true"
+            android:drawableTop="@mipmap/icon_service"
+            android:gravity="center_horizontal"
+            android:text="购物车"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#eae8e8"/>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/pro_tablayout"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#fff"
+        app:layout_collapseMode="pin"
+        app:tabIndicatorColor="#9f00"
+        app:tabMode="fixed"
+        app:tabSelectedTextColor="#9f00"
+        app:tabTextColor="#000" />
+
+    />
+
+    
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pro_ViewPager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/viewpager"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+
+</LinearLayout>

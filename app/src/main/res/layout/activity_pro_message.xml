@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:background="@color/colorWhite"
+                android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/message_imageview"
+        android:layout_width="25dp  "
+        android:layout_height="25dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@mipmap/btn_close_login"
+        android:clickable="true"/>
+
+    <TextView
+        android:id="@+id/m_tv"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@+id/message_imageview"
+        android:background="@color/colorWhite"/>
+
+    <LinearLayout
+        android:id="@+id/linearlayout1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/m_tv"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@mipmap/icon_cellphone"/>
+
+        <EditText
+            android:id="@+id/message_cellphone"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="输入手机号码"
+            android:textSize="15sp"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearlayout2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/linearlayout1"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@mipmap/icon_password"/>
+
+        <EditText
+            android:id="@+id/message_passwprd"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="密码"
+            android:textSize="15sp"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/message_btn_loig"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearlayout2"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/yuanjiaoshuxing"
+        android:text="登陆"/>
+
+    <TextView
+        android:id="@+id/message_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/message_btn_loig"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:text="使用验证码登陆"/>
+
+    <TextView
+        android:id="@+id/text_test"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/message_tv"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="100dp"
+        android:text="——————————使用社交账号登录———————————"/>
+
+    <LinearLayout
+       android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:id="@+id/linearlayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_test"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:id="@+id/message_sina"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/icon_log_sina"
+            android:clickable="true"/>
+        <ImageView
+
+            android:layout_marginLeft="70dp"
+            android:layout_marginRight="70dp"
+            android:id="@+id/message_weixin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/icon_log_wechat"
+            android:clickable="true"/>
+        <ImageView
+
+            android:id="@+id/message_qq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/icon_log_qq"
+            android:clickable="true"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/CateInFragLvTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="对象" />
+
+    <GridView
+        android:id="@+id/CateInFragLvGv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:horizontalSpacing="5dp"
+        android:numColumns="4"
+        android:padding="5dp"
+        android:verticalSpacing="20dp"
+        android:listSelector="@color/colorWhite"/>
+    <!--android:stretchMode="spacingWidthUniform"
+        android:horizontalSpacing="0dp"
+        android:verticalSpacing="0dp"-->
+</LinearLayout>

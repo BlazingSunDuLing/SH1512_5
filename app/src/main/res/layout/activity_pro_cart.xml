@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="#efeded"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:background="@color/colorRed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/cart_imageview"
+            android:clickable="true"
+            android:background="@mipmap/ic_action_back"
+            android:layout_width="25dp  "
+            android:layout_height="25dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="购物车"
+            android:textStyle="bold"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp"/>
+    </android.support.v7.widget.Toolbar>
+
+   <LinearLayout
+       android:id="@+id/cart_linear"
+       android:background="@color/colorWhite"
+       android:layout_marginTop="10dp"
+       android:orientation="horizontal"
+       android:layout_width="match_parent"
+       android:gravity="center_vertical"
+       android:layout_height="30dp">
+       <ImageView
+           android:layout_marginLeft="10dp"
+           android:src="@mipmap/icon_taobao"
+           android:layout_width="15dp"
+           android:layout_height="15dp"/>
+       <TextView
+           android:layout_marginLeft="10dp"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="淘宝购物车"
+           android:textSize="15sp"/>
+       <ImageView
+           android:layout_marginLeft="250dp"
+           android:src="@mipmap/ic_chevron"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"/>
+   </LinearLayout>
+    <RelativeLayout
+        android:background="#efeded"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+
+            android:text="还没有添加任何礼物"/>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorDialogToast">#8f000000</color>
+    <color name="colorWhite">#ffffffff</color>
+    <color name="colorRed">#ff0004</color>
+    <color name="colorGray">#f6b6b6b6</color>
+    <!--<color name="color"-->
+    <color name="colorBlack">#000000</color>
+    <color name="colorAlphaWhite">#f6ffffff</color>
+    <color name="colorAlpha0">#01000000</color>
+    <color name="gradientEndColor">#4f000000</color>
+    <color name="colorLightGray">#e2e2e2</color>
+    <color name="colorOrange">#ef9f3d</color>
+    <color name="colorGrayBlack">#1c1c1c</color>
+    <color name="colorsoLightGray">#0fe2e2e2</color>
+</resources>

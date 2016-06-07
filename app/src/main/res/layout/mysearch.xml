@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center_vertical"
+              android:background="@drawable/shape_search"
+    android:orientation="horizontal"
+    >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/abc_ic_search_api_holo_light"
+        android:layout_marginLeft="2dp"
+        android:paddingRight="2dp"/>
+    <EditText
+        android:id="@+id/mySearchEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textCursorDrawable="@null"
+        android:hint="搜索礼物、攻略"
+        android:textColor="@color/colorBlack"
+        android:background="@null"
+        />
+
+
+</LinearLayout>
